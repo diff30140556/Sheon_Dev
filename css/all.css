@@ -13,6 +13,9 @@ a, button{
 }
 
 .navbar-brand{
+    background-size: 400px 400px;
+    height: 75px;
+    width: 130px;
     position: relative;
 }
 
@@ -398,10 +401,6 @@ textarea.form-control {
     background: #000;
 }
 
-.navbar-brand{
-    height: 75px;
-    width: 130px;
-}
 
 @media only screen and (max-width:768px) {
     .profile-wrapper{
@@ -472,15 +471,16 @@ textarea.form-control {
     }
 
     .navbar-brand{
-        height: 55px;
-        width: 130px;
+        background-size: 300px 300px;
+        height: 50px;
+        width: 120px;
     }
 
     .navbar-toggler-icon{
         width: 1.3rem;
         height: 1.5rem;
     }
-    
+
     .navbar-brand::after{
         display: none;
     }
