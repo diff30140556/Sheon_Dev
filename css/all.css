@@ -262,6 +262,49 @@ a, button{
     text-transform: uppercase;
 }
 
+.portfolio-img{
+    position: relative;
+    z-index: 0;
+}
+
+.portfolio-img a{
+    color: #fff;
+    font-size: 30px;
+}
+
+.portfolio-img a:hover{
+    color: rgb(205, 201, 201);
+}
+
+.portfolio-img span{
+    opacity: 0.9;
+}
+
+.portfolio-img:hover .overlay{
+    opacity: 0.4;
+}
+
+.portfolio-img:hover .portfolio-text{
+    opacity: 1;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    z-index: -1;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.portfolio-text{
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
 .dbox .text{
     width: 100%;
 }
@@ -405,6 +448,11 @@ textarea.form-control {
     animation-duration: 1000ms; /* don't forget to set a duration! */
 }
 
+@media only screen and(max-width: 992px){
+    .navbar-tool li a.active::after{
+        display: none;
+    }
+}
 
 @media only screen and (max-width:768px) {
     .profile-wrapper{
@@ -492,5 +540,13 @@ textarea.form-control {
     .about-div::after,
     .about-div::before{
         display: none;
+    }
+
+    .overlay{
+        opacity: 0.2;
+    }
+
+    .portfolio-text{
+        opacity: 1;
     }
 }
