@@ -448,6 +448,10 @@ textarea.form-control {
     animation-duration: 1000ms; /* don't forget to set a duration! */
 }
 
+.g-map{
+    height: 100%;
+}
+
 @media only screen and(max-width: 992px){
     .navbar-tool li a.active::after{
         display: none;
@@ -548,5 +552,10 @@ textarea.form-control {
 
     .portfolio-text{
         opacity: 1;
+    }
+    
+    
+    .g-map{
+        height: 430px;
     }
 }
